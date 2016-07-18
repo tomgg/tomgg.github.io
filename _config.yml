@@ -3,3 +3,10 @@ markdown:     kramdown
 highlighter:  rouge
 excerpt_separator: "\n\n\n"
 paginate: 5
+
+
+
+#scss设置
+sass:
+    sass_dir: /assets/stylesheet
+    style: :compressed

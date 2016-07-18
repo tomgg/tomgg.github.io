@@ -31,7 +31,7 @@ kramdown:
 
 
 # 地址设置
-baseurl: "/jekyll-pithy"
+baseurl: "/"
 url: "http://127.0.0.1:4000"
 
 

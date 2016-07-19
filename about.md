@@ -5,7 +5,7 @@ id: id_about_me
 permalink: /about/
 ---
 
-![我就是我]
+
 
 我的格言
 ===

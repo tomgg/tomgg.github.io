@@ -1,8 +1,11 @@
 ---
-layout: default
-title: Java 中的并发
-category: 技术
-comments: true
+layout: post
+title: 如何创建一个线程
+tags:  [java]
+categories: [java开发]
+author: tomgg
+excerpt: "按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
+有两种方式，一种是创建 Thread 对象，另一种是创建 一个本地线程，加入到虚拟机线程中。"
 ---
 
 

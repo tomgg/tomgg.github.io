@@ -5,7 +5,7 @@ id: id_about_me
 permalink: /about/
 ---
 
-![我就是我](http://7xlgu7.com1.z0.glb.clouddn.com/me.jpg)
+![我就是我]
 
 我的格言
 ===

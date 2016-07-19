@@ -32,7 +32,7 @@ kramdown:
 
 # 地址设置
 baseurl: ""
-url: "http://127.0.0.1:4000"
+url: "https://tomgg.github.io"
 
 
 # 分页设置

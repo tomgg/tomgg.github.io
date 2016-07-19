@@ -11,13 +11,13 @@ version: "1.0"
 permalink: /:year/:month/:day/:title/
 
 # 站点设置
-title: "Tomgg"
+title: "Tom的个人博客"
 email: flyokzt@qq.com
 description: "Tomgg个人博客"
 keywords: "Tomgg"
 
 # 用户信息设置
-weibo_username: Tomgg
+weibo_username: tomgg
 github_username: tomgg
 
 # Markdown设置

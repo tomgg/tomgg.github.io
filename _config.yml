@@ -1,5 +1,4 @@
 safe: false
-markdown:     kramdown
 highlighter:  rouge
 excerpt_separator: "\n\n\n"
 paginate: 5
@@ -45,7 +44,8 @@ sass:
     style: :compressed
 
 # duoshuo设置
-# duoshuo_shortname: 
+duoshuo_comments: true
+duoshuo_short_name: tomgg
 
 # 百度统计设置
 # baidu_analysis:

@@ -45,7 +45,7 @@ sass:
 
 # duoshuo设置
 duoshuo_comments: true
-duoshuo_short_name: tomgg
+duoshuo_shortname: tomgg
 
 # 百度统计设置
 # baidu_analysis:

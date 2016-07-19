@@ -8,7 +8,7 @@ excerpt: "Java Socket 编程"
 ---
 
 
-```java
+``` java
 public class SocketServer {
 
 	public static void main(String[] args) {

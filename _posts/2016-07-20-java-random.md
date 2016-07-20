@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 随机数介绍和获取

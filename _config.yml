@@ -21,7 +21,7 @@ weibo_username: tomgg
 github_username: tomgg
 
 # Markdown设置
-kramdown:
+markdown:
   input:  GFM
   use_coderay: true
   coderay:

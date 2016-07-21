@@ -44,8 +44,8 @@ sass:
     style: :compressed
 
 # duoshuo设置
-#duoshuo_comments: true
-#duoshuo_shortname: tomgg
+duoshuo_comments: true
+duoshuo_shortname: tomgg
 
 # 百度统计设置
 # baidu_analysis:

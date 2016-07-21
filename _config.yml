@@ -28,7 +28,7 @@ github_username: tomgg
     # coderay_line_numbers:  nil
 
 markdown: kramdown
-highlighter:  rouge
+highlighter: pygments
 input: GFM
 hard_wrap: false
 pygments: true

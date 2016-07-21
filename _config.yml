@@ -51,5 +51,7 @@ sass:
 duoshuo_comments: true
 duoshuo_shortname: tomgg
 
+comments_url: comment-disqus.html
+
 # 百度统计设置
 # baidu_analysis:

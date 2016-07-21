@@ -5,11 +5,11 @@ permalink: /:year/:month/:day/:title/
 
 # 站点设置
 name: "Tomgg's blogs"
-title: "Tom的个人博客"
+title: "Tomgg's blogs"
 email: flyokzt@qq.com
 authors:  tomgg
-description: "Tomgg个人博客"
-keywords: "Tomgg"
+description: "个人博客写一些计算机技术相关的东东！"
+keywords: "IT,软件,编程,Java,web"
 
 # 用户信息设置
 weibo_username: tomgg

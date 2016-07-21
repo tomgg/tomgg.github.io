@@ -27,9 +27,10 @@ github_username: tomgg
   # coderay:
     # coderay_line_numbers:  nil
 
-kramdown:
-   input: GFM
-   hard_wrap: false
+markdown: kramdown
+highlighter:  rouge
+input: GFM
+hard_wrap: false
 
 # 地址设置
 baseurl: ""

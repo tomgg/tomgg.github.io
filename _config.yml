@@ -1,7 +1,5 @@
 #safe: false
-#highlighter:  rouge
 #excerpt_separator: "\n\n\n"
-#paginate: 5
 
 
 
@@ -11,6 +9,7 @@ version: "1.0"
 permalink: /:year/:month/:day/:title/
 
 # 站点设置
+name: "Tom的个人博客"
 title: "Tom的个人博客"
 email: flyokzt@qq.com
 description: "Tomgg个人博客"
@@ -28,7 +27,7 @@ github_username: tomgg
     # coderay_line_numbers:  nil
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 input: GFM
 hard_wrap: false
 pygments: true

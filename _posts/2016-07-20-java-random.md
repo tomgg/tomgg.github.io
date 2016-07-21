@@ -39,7 +39,7 @@ public static Random random4seed = new Random(10);
 
 示例1代码
 
-{% highlight java %}
+``` java
 public class RandowGen {
 	public static Random random = new Random(10);
 	public static Random random2 = new Random(10);
@@ -52,7 +52,7 @@ public class RandowGen {
 	}
 
 }
-{% endhighlight %}
+```
 
 示例1结果
 

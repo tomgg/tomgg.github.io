@@ -1,17 +1,13 @@
-#safe: false
-#excerpt_separator: "\n\n\n"
-
-
-
 #version
 version: "1.0"
 
 permalink: /:year/:month/:day/:title/
 
 # 站点设置
-name: "Tom的个人博客"
+name: "Tomgg's blogs"
 title: "Tom的个人博客"
 email: flyokzt@qq.com
+authors:  tomgg
 description: "Tomgg个人博客"
 keywords: "Tomgg"
 
@@ -28,11 +24,11 @@ github_username: tomgg
 
 markdown: kramdown
 highlighter: rouge
-input: GFM
-hard_wrap: false
 pygments: true
 
 kramdown:
+  input: GFM
+  hard_wrap: false
   extensions:
     - autolink
     - footnotes

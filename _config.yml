@@ -24,15 +24,14 @@ github_username: tomgg
 
 markdown: kramdown
 highlighter: rouge
-pygments: true
 
 kramdown:
   input: GFM
   hard_wrap: false
-  extensions:
-    - autolink
-    - footnotes
-    - smart
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
 
 # 地址设置
 baseurl: ""

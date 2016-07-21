@@ -32,6 +32,12 @@ highlighter:  rouge
 input: GFM
 hard_wrap: false
 
+kramdown:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+
 # 地址设置
 baseurl: ""
 url: "https://tomgg.github.io"

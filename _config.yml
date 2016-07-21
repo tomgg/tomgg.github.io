@@ -30,9 +30,6 @@ github_username: tomgg
 kramdown:
    input: GFM
    hard_wrap: false
- gems:
-   - jekyll-coffeescript
-   - jekyll-paginate
 
 # 地址设置
 baseurl: ""

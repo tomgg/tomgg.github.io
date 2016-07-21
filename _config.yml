@@ -1,7 +1,7 @@
-safe: false
-highlighter:  rouge
-excerpt_separator: "\n\n\n"
-paginate: 5
+#safe: false
+#highlighter:  rouge
+#excerpt_separator: "\n\n\n"
+#paginate: 5
 
 
 
@@ -44,8 +44,8 @@ sass:
     style: :compressed
 
 # duoshuo设置
-duoshuo_comments: true
-duoshuo_shortname: tomgg
+#duoshuo_comments: true
+#duoshuo_shortname: tomgg
 
 # 百度统计设置
 # baidu_analysis:

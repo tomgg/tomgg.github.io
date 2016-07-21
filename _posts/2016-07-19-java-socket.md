@@ -4,7 +4,7 @@ title: Java Socket 编程
 tags:  [Java]
 categories: [Java]
 author: tomgg
-excerpt: "Java Socket 编程"
+excerpt: "Java Socket 编程  Socket 服务端创建 Socket 服务端创建 Socket 服务端创建 Socket 服务端创建"
 ---
 
 ## Socket 服务端创建## Socket 服务端创建## Socket 服务端创建## Socket 服务端创建## Socket 服务端创建## Socket 服务端创建

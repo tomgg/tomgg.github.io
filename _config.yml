@@ -17,15 +17,15 @@ description: "Tomgg个人博客"
 keywords: "Tomgg"
 
 # 用户信息设置
-weibo_username: tomgg
-github_username: tomgg
+# weibo_username: tomgg
+# github_username: tomgg
 
 # Markdown设置
-markdown:
-  input:  GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers:  nil
+#markdown:
+#  input:  GFM
+#   use_coderay: true
+  # coderay:
+    # coderay_line_numbers:  nil
 
 
 

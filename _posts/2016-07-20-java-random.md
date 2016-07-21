@@ -38,7 +38,8 @@ public static Random random4seed = new Random(10);
 相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
 
 示例1代码
-``` java
+
+```
 public class RandowGen {
 	public static Random random = new Random(10);
 	public static Random random2 = new Random(10);
@@ -52,7 +53,9 @@ public class RandowGen {
 
 }
 ```
+
 示例1结果
+
 ``` 
 random  第1次结果:-1157793070
 random2 第1次结果:-1157793070

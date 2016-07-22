@@ -30,13 +30,14 @@ Java中随机数的获取有多种方式
 Random类中实现的随机算法是伪随机，也就是有规则的随机。在进行随机时，随机算法的起源数字称为种子数(seed)，在种子数的基础上进行一定的变换，从而产生需要的随机。
 
 
-Random对象的两个构造方法
+Random的构造方法
 
+有参的
 ``` java
 public static Random random4seed = new Random(10);
 ```
 该方法可以通过一个种子数进行创建。
->注意：种子数是随机算法的起源数，和生产随机数的区间无关。
+>注意：种子数是随机算法的起源数，和生成随机数的区间无关。
 相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
 
 示例1代码
@@ -47,7 +48,7 @@ public class RandowGen {
 	public static Random random2 = new Random(10);
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println("random  第"+(i+1)+"次结果:"+random.nextInt());
 			System.out.println("random2 第"+(i+1)+"次结果:"+random2.nextInt());
 		}
@@ -67,22 +68,19 @@ random  第4次结果:1773446580
 random2 第4次结果:1773446580
 random  第5次结果:254270492
 random2 第5次结果:254270492
-random  第6次结果:-1408064384
-random2 第6次结果:-1408064384
-random  第7次结果:1048475594
-random2 第7次结果:1048475594
-random  第8次结果:1581279777
-random2 第8次结果:1581279777
-random  第9次结果:-778209333
-random2 第9次结果:-778209333
-random  第10次结果:1532292428
-random2 第10次结果:1532292428
 ```
 
+无参数
 ``` java
 public static Random random = new Random();
 ```
-该方法内部会使用一个系统时间和
+实际上该方法内部会拿一个数和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。
+由于系统时间是一直在变化的，基本上得到随机数很难重复。
+
+Random的成员方法
+
+
+
 
 
 

@@ -39,6 +39,7 @@ kramdown:
   input:            GFM
   auto_id_prefix:   'id-'
   auto_ids:         true
+  syntax_highlighter: rouge
   extensions:
     - autolink
     - footnotes
@@ -49,6 +50,8 @@ kramdown:
   toc_levels:    1..6
   smart_quotes:  lsquo,rsquo,ldquo,rdquo
   use_coderay:   true
+  coderay:
+    coderay_line_numbers:  nil
 
 # 地址设置
 baseurl: ""

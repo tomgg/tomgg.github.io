@@ -77,14 +77,13 @@ public static Random random = new Random();
 该方法内部会拿一个数和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。
 由于系统时间是一直在变化的，基本上得到随机数很难重复。
 
-##### Random的成员方法
+#### Random的成员方法
 
 
 ``` java
 	/**生成随机字节并将其置于用户提供的 byte 数组中**/
 	public void nextBytes(byte[] bytes);
 ```
-
 
 ``` java
 	/**返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值**/
@@ -97,35 +96,34 @@ public static Random random = new Random();
 ```
 
 ``` java
-public float nextFloat();
+	/**返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 float 值**/
+	public float nextFloat();
 ```
-返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 float 值。
 
 ``` java
-synchronized public double nextGaussian();
+	/**返回下一个伪随机数，它是取自此随机数生成器序列的、呈高斯（“正态”）分布的 double 值，其平均值是 0.0，标准差是 1.0**/
+	synchronized public double nextGaussian();
 ```
-返回下一个伪随机数，它是取自此随机数生成器序列的、呈高斯（“正态”）分布的 double 值，其平均值是 0.0，标准差是 1.0。
-
-
-``` java
-public int nextInt();
-```
-返回下一个伪随机数，它是此随机数生成器的序列中均匀分布的 int 值。
 
 ``` java
-public int nextInt(int n);
+	/**返回下一个伪随机数，它是此随机数生成器的序列中均匀分布的 int 值**/
+	public int nextInt();
 ```
-返回一个伪随机数，它是取自此随机数生成器序列的、在 0（包括）和指定值（不包括）之间均匀分布的 int 值。
 
 ``` java
-public long nextLong();
+	/**返回一个伪随机数，它是取自此随机数生成器序列的、在 0（包括）和指定值（不包括）之间均匀分布的 int 值**/
+	public int nextInt(int n);
 ```
-返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 long 值。
 
 ``` java
-synchronized public void setSeed(long seed);
+	/**返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 long 值**/
+	public long nextLong();
 ```
-使用单个 long 种子设置此随机数生成器的种子。
+
+``` java
+	/**使用单个 long 种子设置此随机数生成器的种子**/
+	synchronized public void setSeed(long seed);
+```
 
 2. java.lang.Math
 

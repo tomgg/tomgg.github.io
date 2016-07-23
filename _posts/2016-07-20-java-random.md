@@ -29,7 +29,7 @@ C语言、C++、C#、Java、Matlab等程序语言和软件中都有对应的随�
 Random类中实现的随机算法是伪随机，也就是有规则的随机。在进行随机时，随机算法的起源数字称为种子数(seed)，在种子数的基础上进行一定的变换，从而产生需要的随机。
 
 
-#####Random的构造方法 
+##### Random的构造方法 
 
 ``` java
 public static Random random4seed = new Random(10);
@@ -77,23 +77,24 @@ public static Random random = new Random();
 该方法内部会拿一个数和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。
 由于系统时间是一直在变化的，基本上得到随机数很难重复。
 
-#####Random的成员方法
-
-*生成随机字节并将其置于用户提供的 byte 数组中。*
-``` java
-public void nextBytes(byte[] bytes);
-```
+##### Random的成员方法
 
 
-*返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。*
-``` java
-public boolean nextBoolean();
-```
+> ``` java
+> public void nextBytes(byte[] bytes);
+> ```
+> *生成随机字节并将其置于用户提供的 byte 数组中。*
 
-``` java
-public double nextDouble();
-```
-返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值。
+
+> ``` java
+> public boolean nextBoolean();
+> ```
+> *返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。*
+
+> ``` java
+> public double nextDouble();
+> ```
+> 返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值。
 
 ``` java
 public float nextFloat();

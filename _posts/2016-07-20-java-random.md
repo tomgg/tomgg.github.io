@@ -48,7 +48,7 @@ _Random的构造方法_
 ```
 
 >注意：种子数是随机算法的起源数，和生成随机数的区间无关。相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
->示例代码:
+>>示例代码:
 >> ``` java
 >> public class RandowGen {
 >>	public static Random random = new Random(10);

@@ -50,31 +50,18 @@ _Random的构造方法_
 >注意：种子数是随机算法的起源数，和生成随机数的区间无关。相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
 >示例代码:
 >> ``` java
->>public class RandowGen {
+>> public class RandowGen {
 >>	public static Random random = new Random(10);
 >>	public static Random random2 = new Random(10);
->>
 >>	public static void main(String[] args) {
 >>		for (int i = 0; i < 5; i++) {
 >>			System.out.println("random  第"+(i+1)+"次结果:"+random.nextInt());
 >>			System.out.println("random2 第"+(i+1)+"次结果:"+random2.nextInt());
 >>		}
 >>	}
->>}
+>> }
 >> ```
->结果:
->> ``` 
->>random  第1次结果:-1157793070
->>random2 第1次结果:-1157793070
->>random  第2次结果:1913984760
->>random2 第2次结果:1913984760
->>random  第3次结果:1107254586
->>random2 第3次结果:1107254586
->>random  第4次结果:1773446580
->>random2 第4次结果:1773446580
->>random  第5次结果:254270492
->>random2 第5次结果:254270492
->> ```
+
 
 ``` java
 	/**该方法虽然没有参数，但是其内部会用一个数字和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。由于系统时间是一直在变化的，所以基本上得到随机数都是不重复**/

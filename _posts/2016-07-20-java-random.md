@@ -85,11 +85,27 @@ public static Random random = new Random();
 Random的成员方法
 
 ``` java
+random.nextBytes(byte[] bytes) ;
+```
+
+生成随机字节并将其置于用户提供的 byte 数组中。
+
+
+``` java
 random.nextBoolean();
 ```
-返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值
 
+返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。
 
+``` java
+random.nextDouble();
+```
+返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值。
+
+``` java
+random.nextFloat();
+```
+返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 float 值。
 
 
 

@@ -25,22 +25,19 @@ C语言、C++、C#、Java、Matlab等程序语言和软件中都有对应的随�
 
 #### 随机数获取
 **伪随机数**
-Java中随机数的获取有多种方式
 1. java.util.Random类
 Random类中实现的随机算法是伪随机，也就是有规则的随机。在进行随机时，随机算法的起源数字称为种子数(seed)，在种子数的基础上进行一定的变换，从而产生需要的随机。
 
 
-Random的构造方法
-
-有参的
+#####Random的构造方法 
 
 ``` java
 public static Random random4seed = new Random(10);
 ```
-
 该方法可以通过一个种子数进行创建。
+
 >注意：种子数是随机算法的起源数，和生成随机数的区间无关。
-相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
+>相同种子数的Random对象，相同次数生成的随机数字是完全相同的。
 
 示例1代码
 
@@ -73,29 +70,25 @@ random  第5次结果:254270492
 random2 第5次结果:254270492
 ```
 
-无参的
-
 ``` java
 public static Random random = new Random();
 ```
 
-实际上该方法内部会拿一个数和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。
+该方法内部会拿一个数和系统当前纳秒时间做一个异或操作的结果作为种子数，再调用有参的构造方法。
 由于系统时间是一直在变化的，基本上得到随机数很难重复。
 
-Random的成员方法
+#####Random的成员方法
 
+*生成随机字节并将其置于用户提供的 byte 数组中。*
 ``` java
 public void nextBytes(byte[] bytes);
 ```
 
-生成随机字节并将其置于用户提供的 byte 数组中。
 
-
+*返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。*
 ``` java
 public boolean nextBoolean();
 ```
-
-返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。
 
 ``` java
 public double nextDouble();

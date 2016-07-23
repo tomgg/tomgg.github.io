@@ -81,20 +81,20 @@ public static Random random = new Random();
 
 
 ``` java
-/**生成随机字节并将其置于用户提供的 byte 数组中**/
-public void nextBytes(byte[] bytes);
+	/**生成随机字节并将其置于用户提供的 byte 数组中**/
+	public void nextBytes(byte[] bytes);
 ```
 
 
-> ``` java
-> public boolean nextBoolean();
-> ```
-> *返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。*
+``` java
+	/**返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值**/
+	public boolean nextBoolean();
+```
 
-> ``` java
-> public double nextDouble();
-> ```
-> 返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值。
+``` java
+	/**返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值**/
+	public double nextDouble();
+```
 
 ``` java
 public float nextFloat();

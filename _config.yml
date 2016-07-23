@@ -37,7 +37,7 @@ textile_ext:   textile
 #     - with_toc_data
 kramdown:
   input:            GFM
-  auto_id_prefix:   ''
+  auto_id_prefix:   'id-'
   auto_ids:         true
   extensions:
     - autolink

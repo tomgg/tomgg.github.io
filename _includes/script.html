@@ -5,3 +5,5 @@
 {% for script in page.scripts %}
   <script type="text/javascript" src="{{'/assets/script/' | append: script | prepend: site.baseurl }}"></script>
 {% endfor %}
+<script src="{{ site.baseurl}}/assets/script/highlight.pack.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>

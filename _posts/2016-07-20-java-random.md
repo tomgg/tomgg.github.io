@@ -32,7 +32,7 @@ Random类中实现的随机算法是伪随机，也就是有规则的随机。�
 
 Random的构造方法
 
-:sunny: 有参的
+有参的
 
 ``` java
 public static Random random4seed = new Random(10);
@@ -73,7 +73,7 @@ random  第5次结果:254270492
 random2 第5次结果:254270492
 ```
 
-:sunny: 无参数
+无参的
 
 ``` java
 public static Random random = new Random();
@@ -84,7 +84,10 @@ public static Random random = new Random();
 
 Random的成员方法
 
-
+``` java
+random.nextBoolean();
+```
+返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值
 
 
 

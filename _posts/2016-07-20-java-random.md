@@ -86,8 +86,6 @@ random2 第5次结果:254270492
 	public static Random random = new Random();
 ```
 
-***
-
 _Random的成员方法_
 
 
@@ -136,6 +134,7 @@ _Random的成员方法_
 	synchronized public void setSeed(long seed);
 ```
 
+***
 
 + #### java.lang.Math
 

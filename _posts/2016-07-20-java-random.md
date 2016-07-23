@@ -98,7 +98,7 @@ public boolean nextBoolean();
 返回下一个伪随机数，它是取自此随机数生成器序列的均匀分布的 boolean 值。
 
 ``` java
- public double nextDouble();
+public double nextDouble();
 ```
 返回下一个伪随机数，它是取自此随机数生成器序列的、在 0.0 和 1.0 之间均匀分布的 double 值。
 

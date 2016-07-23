@@ -22,17 +22,36 @@ github_username: tomgg
   # coderay:
     # coderay_line_numbers:  nil
 
-markdown: kramdown
 highlighter: rouge
-
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
+# redcarpet:
+#   extensions:
+#     - fenced_code_blocks
+#     - no_intra_emphasis
+#     - strikethrough
+#     - no_intra_emphasis
+#     - autolink
+#     - tables
+#     - with_toc_data
 kramdown:
-  input: GFM
-  hard_wrap: false
-#  extensions:
-#    - autolink
-#    - footnotes
-#    - smart
+  input:            GFM
+  auto_id_prefix:   ''
+  auto_ids:         true
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  transliterated_header_ids: false
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   true
 
+
+  
 # 地址设置
 baseurl: ""
 url: "https://tomgg.github.io"

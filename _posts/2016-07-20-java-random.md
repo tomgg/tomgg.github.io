@@ -80,10 +80,10 @@ public static Random random = new Random();
 ##### Random的成员方法
 
 
-> ``` java
-> public void nextBytes(byte[] bytes);
-> ```
-> *生成随机字节并将其置于用户提供的 byte 数组中。*
+``` java
+/**生成随机字节并将其置于用户提供的 byte 数组中**/
+public void nextBytes(byte[] bytes);
+```
 
 
 > ``` java

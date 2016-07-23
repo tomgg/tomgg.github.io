@@ -135,18 +135,16 @@ _Random的成员方法_
 	/**使用单个 long 种子设置此随机数生成器的种子**/
 	synchronized public void setSeed(long seed);
 ```
-1. ssss
-2. java.lang.Math
 
-
-``` java	
-public static float genRandomNum(long l) {
-		return new Random(l).nextFloat();
-	}
-```
 
 + #### java.lang.Math
 
+第一次调用该方法时，它将创建一个新的伪随机数生成器，与以下表达式完全相同new java.util.Random之后，新的伪随机数生成器可用于此方法的所有调用，但不能用于其他地方。此方法是完全同步的，可允许多个线程使用而不出现错误。但是，如果许多线程需要以极高的速率生成伪随机数，那么这可能会减少每个线程对拥有自己伪随机数生成器的争用。
+
+``` java
+	/**返回带正号的 double 值，该值大于等于 0.0 且小于 1.0。返回值是一个伪随机选择的数，在该范围内（近似）均匀分布**/
+	public static double random();
+```
 
 
 **真随机数**

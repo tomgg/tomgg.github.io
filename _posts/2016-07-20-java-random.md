@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何获取随机数
-tags:  [Java]
+tags:  [Java,Random]
 categories: [Java]
 author: Tomgg
 excerpt: "随机数的特征，随机数的种类，不同种类的应用场景，java中如何获取随机数，真正随机数如何获取？"
@@ -152,5 +152,4 @@ _Random的成员方法_
 
 
 熵池
-java.util.Random
 java.security.SecureRandom

@@ -158,6 +158,6 @@ java.security.SecureRandom
 **场景**
 随机验证码
 
-### 淡淡地sssdddeeedddddddd
+### 淡淡地sssdddeeedddddddd3333
 
 重置密码的URL 中的随机串

@@ -73,7 +73,7 @@ public class RandowGen {
 
 示例结果
 
-``` 
+```
 random  第1次结果:-1157793070
 random2 第1次结果:-1157793070
 random  第2次结果:1913984760
@@ -157,4 +157,7 @@ java.security.SecureRandom
 
 **场景**
 随机验证码
+
+### 淡淡地
+
 重置密码的URL 中的随机串

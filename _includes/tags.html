@@ -25,12 +25,28 @@
  </canvas>
 
  <script type="text/javascript">
- 
 
+ var myOption = {
+    textColour: '#ff0000',
+          outlineColour: '#ff00ff',
+          textHeight:30,
+          reverse: true,
+          depth: 0.8,
+          maxSpeed: 0.05,
+          minSpeed:0.01,
+          dragControl:true,
+          initial:[0.05,-0.08],
+          weight:true,
+          weightMode:"both",
+          weightSize:1.0,
+          weightGradient:{0:'#f00', 0.33:'#ff0', 0.66:'#0f0', 1:'#00f'},
+          tooltip: 'div',
+
+  };
 
  window.onload = function() {
    try {
-     TagCanvas.Start('myCanvas');
+     TagCanvas.Start('myCanvas','',myOption);
    } catch(e) {
      // something went wrong, hide the canvas container
      document.getElementById('myCanvasContainer').style.display = 'none';

@@ -33,14 +33,10 @@
 };
 TagCanvas.weightGradient = gradient;
 
- var options = {
- textColour: '#333',
- textHeight: 20,
- depth: 0.99
-};
+
  window.onload = function() {
    try {
-     TagCanvas.Start('myCanvas','',options);
+     TagCanvas.Start('myCanvas');
    } catch(e) {
      // something went wrong, hide the canvas container
      document.getElementById('myCanvasContainer').style.display = 'none';

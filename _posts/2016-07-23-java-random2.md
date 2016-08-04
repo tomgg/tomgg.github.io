@@ -7,7 +7,7 @@ author: Tomgg
 excerpt: "设置eclipse中tab健为4个空格的方法，使代码在不同编辑器下展现的效果相同"
 ---
 
-上一篇[如何获得随机数](2016/07/20/java-random/)
+上一篇[如何获得随机数]({{ site.baseurl}}/2016/07/20/java-random/)
 
 
 1、打开security的debug log

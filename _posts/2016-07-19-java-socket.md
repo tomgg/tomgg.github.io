@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Java Socket 编程
-tags:  [Java]
-categories: [Java]
+tags:  [Java,Socket]
+categories: [Java开发]
 author: tomgg
 excerpt: "Java Socket 编程  Socket 服务端创建 Socket 服务端创建 Socket 服务端创建 Socket 服务端创建"
 ---

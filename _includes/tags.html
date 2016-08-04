@@ -4,21 +4,13 @@
         标签云
     </div>
 <div id="myCanvasContainer">
- <canvas width="285" height="285" id="myCanvas">
+ <canvas width="284" height="280" id="myCanvas">
   <p>Anything in here will be replaced on browsers that support the canvas element</p>
   <ul>
     {% for tag in site.tags %}
         <li><a  href="{{site.baseurl}}/tag/#{{tag.first}}" data-target-cate="#{{tag.first}}"> {{ tag.first }} </a>
       </li>
     {% endfor %}
-   <li><a href="http://www.google.com" target="_blank">Google</a></li>
-   <li><a href="/fish">Fish</a></li>
-   <li><a href="/chips">Chips</a></li>
-   <li><a href="/salt">Salt</a></li>
-   <li><a href="/vinegar">Vinegar</a></li>
-   <li><a href="/chips">Chips</a></li>
-   <li><a href="/salt">Salt</a></li>
-   <li><a href="/vinegar">Vinegar</a></li>
   </ul>
  </canvas>
 

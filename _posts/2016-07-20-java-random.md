@@ -2,7 +2,7 @@
 layout: post
 title: 如何获取随机数
 tags:  [Java,Random]
-categories: [Java]
+categories: [Java开发]
 author: Tomgg
 excerpt: "随机数的特征，随机数的种类，不同种类的应用场景，java中如何获取随机数，真正随机数如何获取？"
 ---

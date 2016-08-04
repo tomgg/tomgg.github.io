@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 如何创建一个线程
-tags:  [java]
-categories: [java开发]
+tags:  [Java,多线程]
+categories: [Java开发]
 author: tomgg
 excerpt: "按 Java 语言规范中的说法，创建线程只有一种方式，就是创建一个 Thread 对象。而从 HotSpot 虚拟机的角度看，创建一个虚拟机线程
 有两种方式，一种是创建 Thread 对象，另一种是创建 一个本地线程，加入到虚拟机线程中。"
@@ -76,7 +76,7 @@ sleep 会使得当前线程休眠一段时间，但并不会释放已经得到�
 
 wait 会阻塞住，并释放已经得到的锁。一直到有人调用 notify 或者 notifyAll，它会重新尝试得到锁，然后再唤醒。
 
-## 线程池 
+## 线程池
 
 ### 好处
 
@@ -122,7 +122,7 @@ for (int i = 0; i < 14; i++) {
 
 另外，还提供了 `newSingleThreadExecutor` 创建有一个工作线程的线程池。
 
-### 原理 
+### 原理
 
 JDK 中的线程池通过 HashSet 存储工作者线程，通过 BlockingQueue 来存储待处理任务。
 

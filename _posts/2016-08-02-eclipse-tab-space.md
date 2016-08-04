@@ -2,9 +2,9 @@
 layout: post
 title: eclipse中tab健为4个空格的方法
 tags:  [eclipse,开发工具]
-categories: [eclipse]
+categories: [开发工具]
 author: Tomgg
-excerpt: "eclipse中tab健为4个空格的方法"
+excerpt: "设置eclipse中tab健为4个空格的方法，使代码在不同编辑器下展现的效果相同"
 ---
 
 

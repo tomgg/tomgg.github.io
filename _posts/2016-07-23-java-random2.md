@@ -1,3 +1,15 @@
+---
+layout: post
+title: 如何获得真随机数
+tags:  [eclipse,开发工具]
+categories: [开发工具]
+author: Tomgg
+excerpt: "设置eclipse中tab健为4个空格的方法，使代码在不同编辑器下展现的效果相同"
+---
+
+上一篇[如何获得随机数](2016/07/20/java-random/)
+
+
 1、打开security的debug log
 -Djava.security.debug=all
 安全的随机数

@@ -150,6 +150,7 @@ _Random的成员方法_
 
 ### 随机数应用
 图片验证码的获取程序用到了很多次随机数
+
 ``` java
 public class VertifyCodeServlet extends HttpServlet {
 
@@ -188,21 +189,17 @@ public class VertifyCodeServlet extends HttpServlet {
         // 输出图片
         try {
             ByteArrayOutputStream bs = new ByteArrayOutputStream();
-
             JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(bs);
             encoder.encode(image);
-
             bs.flush();
             byte[] bytes = bs.toByteArray();
             response.setContentLength(bytes.length);
             response.setContentType("image/jpeg");
             response.getOutputStream().write(bytes);
-
             bs.close();
 
             request.getSession().removeAttribute(BaseServer.WBS_VERTIFY_CODE_ATTR);
             request.getSession().setAttribute(BaseServer.WBS_VERTIFY_CODE_ATTR, parityString);
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }

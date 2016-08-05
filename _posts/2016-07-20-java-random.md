@@ -149,11 +149,10 @@ _Random的成员方法_
 ```
 
 ### 随机数应用
-图片验证码的获取程序用到了很多次随机数
+图片验证码的获取程序用到了很多次随机数。
 
 ``` java
 public class VertifyCodeServlet extends HttpServlet {
-
     // Process the HTTP Get request
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 随机产生4位数字,加入空格可以增加图片识别难度
@@ -180,7 +179,6 @@ public class VertifyCodeServlet extends HttpServlet {
         g2d.fillRect(0, 0, image.getWidth(), image.getHeight());
         g2d.setColor(Color.white);
         for (int i = 0; i < (int) (Math.random() * 10) + 15; ++i)
-
             g2d.fillRect((int) Math.random() * image.getWidth(), (int) Math.random() * image.getHeight(), 2, 2);
         Color rgb = new Color(0, 0, 0);
         g2d.setColor(rgb);
@@ -197,18 +195,13 @@ public class VertifyCodeServlet extends HttpServlet {
             response.setContentType("image/jpeg");
             response.getOutputStream().write(bytes);
             bs.close();
-
             request.getSession().removeAttribute(BaseServer.WBS_VERTIFY_CODE_ATTR);
             request.getSession().setAttribute(BaseServer.WBS_VERTIFY_CODE_ATTR, parityString);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
-
-  public void doPost(HttpServletRequest request, HttpServletResponse response) throws
-      ServletException, IOException {
-    doGet(request, response);
-  }
+}
 ```
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 线程同步工具CountDownLatch
-tags:  [Java,多线程]
+tags:  [Java,多线程,CountDownLatch]
 categories: [Java开发]
 author: tomgg
 excerpt: "我们有的时候有这样的需求，多个线程同时工作时，其中几个线程可以随意并发执行，但是其中有一个线程必须等待其他线程工作完成后才能开始执行。例如：开启对多线程进行文件下载，下载完成后由一个统一的线程进行文件合并操作。"

@@ -72,7 +72,7 @@ public class RandowGen {
 }
 ```
 
-示例结果
+运行结果
 
 ```
 random  第1次结果:-1157793070
@@ -223,8 +223,143 @@ public class VertifyCodeServlet extends HttpServlet {
 
 这是一个孤立的作用到当前线程的随机数生成器，在多线程环境下性能优于Random
 
+下面实例代码对 Random、Math.random、ThreadLocalRandom在多线程情况下性能进行比较
 
+```java
+package tomgg.random;
 
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.concurrent.Callable;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class RandowCompare {
+
+    public class RandowGenA implements Callable {
+
+        private CountDownLatch cdl;
+
+        RandowGenA(CountDownLatch cdl) {
+            this.cdl = cdl;
+        }
+
+        @Override
+        public Object call() throws Exception {
+            System.out.println(Thread.currentThread().getName());
+            long time = System.nanoTime();
+            try {
+                this.cdl.await();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            for (int i = 0; i < 10; i++) {
+                Math.random();
+            }
+            return System.nanoTime() - time;
+        }
+    }
+
+    public class RandowGenB implements Callable {
+        private CountDownLatch cdl;
+
+        RandowGenB(CountDownLatch cdl) {
+            this.cdl = cdl;
+        }
+
+        @Override
+        public Object call() throws Exception {
+            Thread.currentThread().setName("ThreadLocalRandom " + Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getName());
+            long time = System.nanoTime();
+            try {
+                this.cdl.await();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            for (int i = 0; i < 10; i++) {
+                ThreadLocalRandom.current().nextDouble();
+            }
+            return System.nanoTime() - time;
+        }
+    }
+
+    public class RandowGenC implements Callable {
+        private CountDownLatch cdl;
+        public Random r;
+
+        RandowGenC(CountDownLatch cdl, Random r) {
+            this.cdl = cdl;
+            this.r = r;
+        }
+
+        @Override
+        public Object call() throws Exception {
+            Thread.currentThread().setName("Random " + Thread.currentThread().getName());
+            System.out.println(Thread.currentThread().getName());
+            long time = System.nanoTime();
+            try {
+                this.cdl.await();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            for (int i = 0; i < 10; i++) {
+                this.r.nextDouble();
+            }
+            return System.nanoTime() - time;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        ArrayList<Future<Long>> aresults = new ArrayList<Future<Long>>();
+        ArrayList<Future<Long>> bresults = new ArrayList<Future<Long>>();
+        ArrayList<Future<Long>> cresults = new ArrayList<Future<Long>>();
+
+        CountDownLatch cdl = new CountDownLatch(1);
+        RandowCompare rc = new RandowCompare();
+        Random r = new Random();
+        for (int i = 0; i < 100; i++) {
+            aresults.add(exec.submit(rc.new RandowGenA(cdl)));
+        }
+        for (int i = 0; i < 100; i++) {
+            bresults.add(exec.submit(rc.new RandowGenB(cdl)));
+        }
+        for (int i = 0; i < 100; i++) {
+            cresults.add(exec.submit(rc.new RandowGenC(cdl, r)));
+        }
+        cdl.countDown();
+        long a = 0, b = 0, c = 0;
+        for (Future<Long> fs : aresults) {
+            a += fs.get();
+
+        }
+        for (Future<Long> fs : bresults) {
+            b += fs.get();
+        }
+        for (Future<Long> fs : cresults) {
+            c += fs.get();
+        }
+        System.out.println("Math.random      :" + a + " ns");
+        System.out.println("Random           :" + c + " ns");
+        System.out.println("ThreadLocalRandom:" + b + " ns");
+    }
+}
+```
+运行结果
+```
+Math.random      :12467532415 ns
+Random           :3495067477 ns
+ThreadLocalRandom:7668623999 ns
+```
+结果可以看出新能最好的居然是 Random ，这一点本人也很疑惑。
+查看官方文档：
+
+http://docs.oracle.com/javase/7/docs/api/java/util/Random.html
+Instances of java.util.Random are threadsafe. However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs.
 
 
 

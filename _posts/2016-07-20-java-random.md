@@ -357,9 +357,8 @@ Random           :3495067477 ns
 ThreadLocalRandom:7668623999 ns
 ```
 结果可以看出新能最好的居然是 Random ，这一点本人也很疑惑。
-查看官方文档：
+查看官方文档：[Random](http://docs.oracle.com/javase/7/docs/api/java/util/Random.html)
 
-http://docs.oracle.com/javase/7/docs/api/java/util/Random.html
 Instances of java.util.Random are threadsafe. However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs.
 
 

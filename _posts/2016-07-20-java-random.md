@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何获取随机数
-tags:  [Java,Random]
+tags:  [Java,Random,随机数]
 categories: [Java开发]
 author: Tomgg
 excerpt: "随机数的特征，随机数的种类，不同种类的应用场景，java中如何获取随机数，真正随机数如何获取？"
@@ -359,7 +359,7 @@ ThreadLocalRandom:7668623999 ns
 结果可以看出新能最好的居然是 Random ，这一点本人也很疑惑。
 查看官方文档：[Random](http://docs.oracle.com/javase/7/docs/api/java/util/Random.html)
 
-Instances of java.util.Random are threadsafe. However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs.
+>Instances of java.util.Random are threadsafe. However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs.
 
 
 

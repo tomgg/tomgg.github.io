@@ -350,6 +350,7 @@ public class RandowCompare {
 }
 ```
 运行结果
+
 ```
 Math.random      :12467532415 ns
 Random           :3495067477 ns

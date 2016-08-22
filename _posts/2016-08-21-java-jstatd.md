@@ -12,6 +12,7 @@ jstatd远程服务开启
 ###独立进程方式
 
 1. 第一步创建文件 jstatd.java.policy
+
 ```shell
 grant codebase "file:${java.home}/../lib/tools.jar" {
    permission java.security.AllPermission;

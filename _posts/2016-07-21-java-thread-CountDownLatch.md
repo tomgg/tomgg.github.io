@@ -61,35 +61,3 @@ Thread-5 Download Done!
 main File Merge!
 
 ```
-
-
-```java
-public static <E, V> V doWork(List<? extends Work<E>> workList,
-    ReduceWork<E, V> reduceWork) throws Exception {
-  CountDownLatch begin = new CountDownLatch(1);
-  CountDownLatch notify = new CountDownLatch(workList.size());
-  List<Future<E>> taskList = new ArrayList<Future<E>>();
-  for (Work<E> work : workList) {
-    taskList.add(service.submit(new WorkTask<E>(work, begin, notify)));
-  }
-  // 开始运行
-  begin.countDown();
-  try {
-    notify.await();
-  } catch (InterruptedException e) {
-    e.printStackTrace();
-    Thread.interrupted();
-  }
-  List<E> resultList = new ArrayList<E>();
-  for (Future<E> task : taskList) {
-    try {
-      resultList.add(task.get());
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    } catch (ExecutionException e) {
-      e.printStackTrace();
-    }
-  }
-  return reduceWork.work(resultList);
-}
-```

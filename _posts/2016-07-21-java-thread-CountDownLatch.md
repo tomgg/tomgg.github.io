@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 线程同步工具CountDownLatch
-tags:  [Java,多线程,CountDownLatch]
+tags:  [Java,多线程]
 categories: [Java开发]
 author: tomgg
 excerpt: "我们有的时候有这样的需求，多个线程同时工作时，其中几个线程可以随意并发执行，但是其中有一个线程必须等待其他线程工作完成后才能开始执行。例如：开启对多线程进行文件下载，下载完成后由一个统一的线程进行文件合并操作。"
@@ -48,7 +48,6 @@ public class CountDownLatchTest {
 ```
 
 ```
-
 Thread-2 Download Done!
 Thread-1 Download Done!
 Thread-7 Download Done!
@@ -60,4 +59,37 @@ Thread-6 Download Done!
 Thread-4 Download Done!
 Thread-5 Download Done!
 main File Merge!
+
+```
+
+
+```java
+public static <E, V> V doWork(List<? extends Work<E>> workList,
+    ReduceWork<E, V> reduceWork) throws Exception {
+  CountDownLatch begin = new CountDownLatch(1);
+  CountDownLatch notify = new CountDownLatch(workList.size());
+  List<Future<E>> taskList = new ArrayList<Future<E>>();
+  for (Work<E> work : workList) {
+    taskList.add(service.submit(new WorkTask<E>(work, begin, notify)));
+  }
+  // 开始运行
+  begin.countDown();
+  try {
+    notify.await();
+  } catch (InterruptedException e) {
+    e.printStackTrace();
+    Thread.interrupted();
+  }
+  List<E> resultList = new ArrayList<E>();
+  for (Future<E> task : taskList) {
+    try {
+      resultList.add(task.get());
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    } catch (ExecutionException e) {
+      e.printStackTrace();
+    }
+  }
+  return reduceWork.work(resultList);
+}
 ```

@@ -9,17 +9,17 @@ excerpt: "jstatd是jvm的分析工具，可以用它来分析内存、cpu使用�
 
 jstatd远程服务开启
 
-###独立进程方式
+### 独立进程方式
 
-1. 第一步创建文件 jstatd.java.policy
+第一步创建文件 jstatd.java.policy
 
 ```shell
 grant codebase "file:${java.home}/../lib/tools.jar" {
    permission java.security.AllPermission;
 };
-
 ```
-2. 第二步启动jstatd
+
+第二步启动jstatd
 
 ``` shell
 jstatd -J-Djava.security.policy=./jstatd.java.policy  -J-Dcom.sun.management.jmxremote.port=8888  -J-Dcom.sun.management.jmxremote.ssl=false  -J-Dcom.sun.management.jmxremote.authenticate=false

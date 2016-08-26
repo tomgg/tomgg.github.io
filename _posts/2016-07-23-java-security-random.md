@@ -15,7 +15,7 @@ excerpt: "上一篇[如何获得随机数]中介绍JAVA语言中常用的随机�
 
 + #### java.security.SecureRandom
 
-
+学习 provider
 
 
 
@@ -38,7 +38,7 @@ excerpt: "上一篇[如何获得随机数]中介绍JAVA语言中常用的随机�
     配置
     使用
 
-
+java8新增
 + #### java.security.SecureRandom
 
 SecureRandom的实现由两点要求

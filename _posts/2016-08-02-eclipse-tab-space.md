@@ -1,10 +1,10 @@
 ---
 layout: post
-title: eclipse中tab健为4个空格的方法
+title: 如何将eclipse中tab键设置为4个空格？
 tags:  [eclipse,开发工具]
 categories: [开发工具]
 author: Tomgg
-excerpt: "设置eclipse中tab健为4个空格的方法，使代码在不同编辑器下展现的效果相同"
+excerpt: "如何将eclipse中tab键设置为4个空格，使代码在不同编辑器下展现的效果相同"
 ---
 
 

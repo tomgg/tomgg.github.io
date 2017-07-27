@@ -22,5 +22,8 @@ grant codebase "file:${java.home}/../lib/tools.jar" {
 第二步启动jstatd
 
 ``` shell
-jstatd -J-Djava.security.policy=./jstatd.java.policy  -J-Dcom.sun.management.jmxremote.port=8888  -J-Dcom.sun.management.jmxremote.ssl=false  -J-Dcom.sun.management.jmxremote.authenticate=false
+jstatd -J-Djava.security.policy=./jstatd.java.policy
+-J-Dcom.sun.management.jmxremote.port=8888
+-J-Dcom.sun.management.jmxremote.ssl=false
+-J-Dcom.sun.management.jmxremote.authenticate=false
 ```

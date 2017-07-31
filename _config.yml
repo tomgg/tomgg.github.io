@@ -22,8 +22,8 @@ github_username: tomgg
   # coderay:
     # coderay_line_numbers:  nil
 
-highlighter: rouge
-markdown: redcarpet  # [ maruku | rdiscount | kramdown | redcarpet ]
+highlighter: pygments
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 # redcarpet:

@@ -5,7 +5,7 @@
 {% for script in page.scripts %}
   <script type="text/javascript" src="{{'/assets/script/' | append: script | prepend: site.baseurl }}"></script>
 {% endfor %}
-<!--<script src="{{ site.baseurl}}/assets/script/highlight.pack.js"></script>-->
+<<script src="{{ site.baseurl}}/assets/script/highlight.pack.js"></script>
 <!--[if lt IE 9]><script type="text/javascript" src="{{ site.baseurl}}/assets/script/excanvas.min.js"></script><![endif]-->
 <script src="{{ site.baseurl}}/assets/script/tagcanvas.min.js"></script>
-<!--<script> hljs.initHighlightingOnLoad(); </script>-->
+<script> hljs.initHighlightingOnLoad(); </script>

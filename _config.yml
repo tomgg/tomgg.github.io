@@ -40,18 +40,18 @@ kramdown:
   auto_id_prefix:   'id-'
   auto_ids:         true
   syntax_highlighter: rouge
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-  transliterated_header_ids: false
-  footnote_nr:   1
-  entity_output: as_char
-  toc_levels:    1..6
-  smart_quotes:  lsquo,rsquo,ldquo,rdquo
-  use_coderay:   true
-  coderay:
-    coderay_line_numbers:  nil
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
+#  transliterated_header_ids: false
+#  footnote_nr:   1
+#  entity_output: as_char
+#  toc_levels:    1..6
+#  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+#  use_coderay:   true
+#  coderay:
+#    coderay_line_numbers:  nil
 
 # 地址设置
 baseurl: ""

@@ -4,11 +4,12 @@ title: CentOS下安装nodejs
 tags:  [软件,nodejs]
 categories: [软件安装]
 author: tomgg
-excerpt: "nodejs 安装"
+excerpt: "CentOS下 nodejs 安装 教程"
 ---
 
 
 ##安装
+
 步骤1：确认操作系统版本
 ``` shell
 [root@csv-zdhc08 ~]# uname -a

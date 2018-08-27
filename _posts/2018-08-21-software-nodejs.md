@@ -12,10 +12,8 @@ excerpt: "CentOS下 nodejs 安装 教程 CentOS下 nodejs 安装 教程 CentOS�
 
 ### 步骤1：确认操作系统版本
 
-``` shell
-[root@csv-zdhc08 ~]# uname -a
-Linux csv-zdhc08 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-```
+![os-version][2]
+
 确认了操作系统是 64位 Linux
 
 ### 步骤2：软件下载
@@ -34,7 +32,13 @@ tar -xvf  node-v8.11.4-linux-x64.tar.xz
 mv node-v8.11.4-linux-x64  node-v8.11.4
 ```
 
+### 步骤5：创建链接
 
+```shell
+ln -s /app/software/nodejs/bin/npm /usr/local/bin/
+ln -s /app/software/nodejs/bin/node /usr/local/bin/
+```
 
 
 [1]: /assets/images/posts/2018-08-21-software-nodejs/01-nodejs-web.jpg "nodejs-web"
+[2]: /assets/images/posts/2018-08-21-software-nodejs/02-os-version.jpg "os-version"

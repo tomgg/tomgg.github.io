@@ -35,8 +35,8 @@ mv node-v8.11.4-linux-x64  node-v8.11.4
 ### 步骤5：创建链接
 
 ```shell
-ln -s /app/software/nodejs/bin/npm /usr/local/bin/
-ln -s /app/software/nodejs/bin/node /usr/local/bin/
+ln -s /software/nodejs/node-v8.11.4/bin/npm /usr/local/bin/
+ln -s /software/nodejs/node-v8.11.4/bin/node /usr/local/bin/
 ```
 
 

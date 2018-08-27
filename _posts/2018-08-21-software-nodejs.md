@@ -4,7 +4,7 @@ title: CentOS下安装nodejs
 tags:  [软件,nodejs]
 categories: [软件安装]
 author: tomgg
-excerpt: "CentOS下 nodejs 安装 教程"
+excerpt: "CentOS下 nodejs 安装 教程 CentOS下 nodejs 安装 教程 CentOS下 nodejs 安装 教程 CentOS下 nodejs 安装 教程"
 ---
 
 

@@ -11,12 +11,14 @@ excerpt: "Gerrit，一种免费、开放源代码的代码审查软件，使用�
  
 
 1、创建用户
+
 ```shell
 useradd -m gerrit -d /software/gerrit  -g software
 ```
 gerrit\1q2w3e4r@20.26.39.26
 
 2、下载软件
+
 https://www.gerritcodereview.com/
 
 gerrit-2.15.3.war
@@ -24,6 +26,7 @@ gerrit-2.15.3.war
 3、上传软件
 
 4、设置代理
+
 ```shell
 export http_proxy=proxy.zj.chinamobile.com:8080
 export https_proxy=proxy.zj.chinamobile.com:8080

@@ -41,7 +41,7 @@ DBName： reviewdb
 密码：gerrit123
 ```
 
-参考：https://www.wolfcstech.com/2017/11/24/gerrit_codereview/
+参考：[URL]https://www.wolfcstech.com/2017/11/24/gerrit_codereview/
 
 
 

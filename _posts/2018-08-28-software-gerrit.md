@@ -4,7 +4,7 @@ title: CentOS下安装gerrit
 tags:  [软件,gerrit]
 categories: [软件安装]
 author: tomgg
-excerpt: "gerrit 代码托管工具，支持代码review，代码审核"
+excerpt: "Gerrit，一种免费、开放源代码的代码审查软件，使用网页界面。利用网页浏览器，同一个团队的软件程序员，可以相互审阅彼此修改后的程序代码，决定是否能够提交，退回或者继续修改。"
 ---
 
 

@@ -25,3 +25,8 @@ gerrit-2.15.3.war
 export http_proxy=proxy.zj.chinamobile.com:8080
 export https_proxy=proxy.zj.chinamobile.com:8080
 ```
+
+
+
+
+

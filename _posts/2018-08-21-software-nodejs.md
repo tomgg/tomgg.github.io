@@ -20,7 +20,7 @@ excerpt: "Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
 
 ### 步骤2：软件下载
 
-下载地址：https://nodejs.org/en/download/
+下载地址：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 ![nodejs-web][1]
 
 ### 步骤3：上传软件

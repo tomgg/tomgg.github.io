@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CentOS下安装gerrit
+title: CentOS下安装Gerrit
 tags:  [软件,gerrit]
 categories: [软件安装]
 author: tomgg
